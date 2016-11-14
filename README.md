@@ -1,7 +1,6 @@
 # giip-ko
 giip Korean Version
 
-Sample Script Source is below
+Document wiki : https://github.com/LowyShin/giip-ko/wiki
 
-https://github.com/LowyShin/giip
-
+Sample Script Source(en) : https://github.com/LowyShin/giip
