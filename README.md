@@ -21,7 +21,7 @@
 1) 웹 접속 후 로그인/회원가입
 2) 프로젝트 생성 후 기본 대시보드 확인
 3) 필요한 경우 에이전트를 설치해 원격 명령/자동화를 활성화
-	 - 자세한 안내: 빠른 시작(한글 위키) → https://github.com/LowyShin/giipdoc-ko/wiki/%EB%B9%A0%EB%A5%B8-%EC%8B%9C%EC%9E%91
+	 - 자세한 안내: [빠른 시작](docs/wiki/빠른-시작.md)
 
 ### 스크린샷
 ![Dashboard](https://github.com/LowyShin/giip/blob/gh-pages/images/v2/giip-ss-dash20200625-01.png)
@@ -32,7 +32,7 @@
 - 무거운 CI/CD 없이, 가벼운 원격 자동화로 배포·점검·롤백 수행
 
 ### 문서 & 리소스
-- 한국어 위키: https://github.com/LowyShin/giipdoc-ko/wiki
+- 한국어 문서(로컬): docs/wiki/INDEX.md
 - English Wiki: https://github.com/LowyShin/giip/wiki
 - 日本語 Wiki: https://github.com/LowyShin/giipdoc-ja/wiki
 - 샘플 스크립트(EN): https://github.com/LowyShin/giip
@@ -45,7 +45,7 @@
 ---
 
 부가 자료
-- GIIP 토큰: https://tokenjar.io/GIIP
+- GIIP 토큰: https://app.uniswap.org/explore/tokens/polygon/0x22eebd0672990fc7b54b306a0bbb541bef5723ae
 - 메인넷: https://etherscan.io/token/0x33be026eff080859eb9dfff6029232b094732c52
 
 이 저장소는 한국어 문서와 예시 자산을 포함한 공개 자료입니다. 서비스는 상단의 체험 링크에서 바로 이용하실 수 있습니다.

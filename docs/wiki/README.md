@@ -1,8 +1,9 @@
 # giipdoc-ko 위키 미러
 
-이 폴더는 https://github.com/LowyShin/giipdoc-ko/wiki 의 공개 페이지를 레포지토리로 동기화한 미러입니다.
+이 폴더는 giipdoc-ko 위키 문서를 레포지토리로 동기화한 미러입니다. GitHub 내비게이션은 아래 로컬 목차를 사용하세요.
 
-- 원본 위키: https://github.com/LowyShin/giipdoc-ko/wiki
+- 로컬 목차: [INDEX.md](./INDEX.md)
+- 원본 위키(참고용): https://github.com/LowyShin/giipdoc-ko/wiki
 - 문의: https://github.com/LowyShin/giip/wiki/Contact-Us
 
 아래는 주요 페이지 목록입니다(파일명 기준). 전체 목록은 [INDEX.md](./INDEX.md)를 참고하세요.

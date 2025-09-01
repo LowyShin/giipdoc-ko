@@ -31,7 +31,7 @@ AWS와 호스팅 서버를 묶어서 일괄 작업을 하거나 부하분산을 
 * KVS를 이용하여 관리가 되면 모든 작업자의 작업 파악이 가능합니다.
 * uipath, ahk, wsf, bat, vbs, sh, pl, rb, go등의 다양한 RPA 및 스크립트언어를 서포트하고 있어, 현재 사용되고 있는 스크립트가 그대로 사용가능합니다.
 
->> [관리 자동화 서비스](https://github.com/LowyShin/giipdoc-ko/wiki/Automation-%EA%B8%B0%EB%8A%A5)
+>> [관리 자동화 서비스](./_archive/Automation-기능---------------.md)
 
 
 ### KVS(Key Value Store)

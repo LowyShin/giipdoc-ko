@@ -13,7 +13,7 @@ English version of wiki : https://github.com/LowyShin/giip/wiki
 ## Quick Start
 
 지금 사용하시는 클라우드 서버 인스턴스의 CPU는 보통 표시되지 않고 있지요. 그럼, giip에서 당신이 사용중인 서버 인스턴스가 어떤 하드웨어 위에 올라가는지 알아볼까요?
--> [Quick Start](https://github.com/LowyShin/giipdoc-ko/wiki/%EB%B9%A0%EB%A5%B8-%EC%8B%9C%EC%9E%91)
+-> [Quick Start](./빠른-시작.md)
 
 ### giip의 활용
 

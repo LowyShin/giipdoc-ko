@@ -2,7 +2,7 @@
 
 구버전 API문서는 여기로 옮겨졌습니다. 
 
-### [giipAPI V2](https://github.com/LowyShin/giipdoc-ko/wiki/API)
+### [giipAPI V2](./API.md)
 
 ## 기본 시스템 정보 취득 API
 * [[getServerList]] : 보유 서버 리스트 출력
