@@ -1,0 +1,26 @@
+[
+  {
+    "old": "-------------Error----------.md",
+    "new": "error.md"
+  },
+  {
+    "old": "API---JSON-to-HTML-KVS(ko).md",
+    "new": "api-json-to-html-kvs(ko).md"
+  },
+  {
+    "old": "KVS-Graph---Morris.md",
+    "new": "kvs-graph-morris.md"
+  },
+  {
+    "old": "매뉴얼---Logical-Server-추가.md",
+    "new": "매뉴얼-logical-server-추가.md"
+  },
+  {
+    "old": "매뉴얼---Logical-Server에-Service-Group-추가.md",
+    "new": "매뉴얼-logical-server에-service-group-추가.md"
+  },
+  {
+    "old": "매뉴얼---Secret-Key-추가.md",
+    "new": "매뉴얼-secret-key-추가.md"
+  }
+]

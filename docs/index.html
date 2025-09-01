@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GIIP 문서 탐색기</title>
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;margin:0;background:#f8fafc;color:#0f172a}
+    header{position:sticky;top:0;background:#0ea5e9;color:#fff;padding:16px 20px;box-shadow:0 2px 6px rgba(0,0,0,.1)}
+    h1{font-size:20px;margin:0}
+    .container{max-width:1100px;margin:0 auto;padding:20px}
+    .search{display:flex;gap:10px;margin:12px 0}
+    .search input{flex:1;padding:10px 12px;border:1px solid #cbd5e1;border-radius:8px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
+    .card{background:#fff;border:1px solid #e2e8f0;border-radius:10px;padding:14px;transition:box-shadow .15s ease,border-color .15s}
+    .card:hover{box-shadow:0 6px 18px rgba(2,6,23,.08);border-color:#cbd5e1}
+    .card a{color:#0369a1;text-decoration:none;font-weight:600}
+    footer{color:#475569;font-size:12px;margin-top:24px}
+  </style>
+  <script>
+    async function loadIndex(){
+      const res = await fetch('./wiki/_index.json');
+      if(!res.ok) throw new Error('index load failed');
+      return res.json();
+    }
+    function render(items){
+      const grid=document.querySelector('.grid');
+      grid.innerHTML='';
+      items.forEach(it=>{
+        const el=document.createElement('div');
+        el.className='card';
+        el.innerHTML=`<a href="./${it.path}">${it.title}</a><div style="color:#64748b;font-size:12px;margin-top:6px">${it.file}</div>`;
+        grid.appendChild(el);
+      });
+    }
+    function setupSearch(items){
+      const q=document.querySelector('#q');
+      const run=()=>{
+        const s=q.value.trim().toLowerCase();
+        if(!s){render(items);return}
+        const f=items.filter(x=>x.title.toLowerCase().includes(s)||x.file.toLowerCase().includes(s));
+        render(f);
+      };
+      q.addEventListener('input',run);
+      render(items);
+    }
+    window.addEventListener('DOMContentLoaded',async()=>{
+      try{
+        const items=await loadIndex();
+        setupSearch(items);
+      }catch(e){
+        document.querySelector('.grid').innerHTML='<div>색인을 불러오지 못했습니다. docs/wiki/_index.json 을 확인하세요.</div>'
+      }
+    });
+  </script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>GIIP 문서 탐색기</h1>
+      </div>
+    </header>
+    <main class="container">
+      <div class="search">
+        <input id="q" placeholder="문서 제목 또는 파일명으로 검색" />
+      </div>
+      <div class="grid"></div>
+      <footer>
+        정적 색인 기반. 새 문서를 추가/수정한 뒤 scripts/generate_wiki_toc.ps1를 실행해 색인을 갱신하세요.
+      </footer>
+    </main>
+  </body>
+  </html>
